@@ -1,1 +1,69 @@
+/* --- Global styles --- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
 
+/* --- Header --- */
+header {
+  background-color: #f1c6d0;
+  text-align: center;
+  padding: 20px;
+}
+
+/* --- Product grid --- */
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+  width: 180px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* --- Details panel --- */
+.details {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#product-image {
+  max-width: 200px;
+  margin-top: 10px;
+  display: none; /* blir synlig när en produkt klickas */
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f1c6d0;
+}
