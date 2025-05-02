@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sminkbutiken</title>
+  <!-- Extern CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Välkommen till Sminkbutiken!</h1>
+  </header>
+
+  <!-- Products -->
+  <section class="products">
+    <div class="product" onclick="showDetails('foundation')">
+      <h2>Foundation</h2>
+      <img src="images/foundation.jpg" alt="foundation">
+    </div>
+    <div class="product" onclick="showDetails('lipstick')">
+      <h2>Läppstift</h2>
+      <img src="images/lipstick.jpg" alt="Läppstift">
+    </div>
+    <div class="product" onclick="showDetails('mascara')">
+      <h2>Mascara</h2>
+      <img src="images/mascara.jpg" alt="Mascara">
+    </div>
+  </section>
+
+  <!-- Product details -->
+  <section id="product-details" class="details">
+    <h2>Produktdetaljer</h2>
+    <p id="product-description">Välj en produkt för att få detaljer.</p>
+    <img id="product-image" src="" alt="Produktbild" style="display:none;">
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sminkbutiken</p>
+  </footer>
+
+  <!-- Extern JavaScript -->
+  <script src="js/script.js" defer></script>
+</body>
+</html>
+
+
